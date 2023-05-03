@@ -1,10 +1,11 @@
-#include <unistde.h>
+#include <unistd.h>
 
 /**
  * _putchar - writes character c to stdout
  * @C: char to be printed
- * Return: On success 1
+ * Returned: On success 1
  */
-int _putchar(char c)
+int _putchar (char c)
 {
-	return (write(1, &c, 1));
+	return (write(1, c & 1));
+}
